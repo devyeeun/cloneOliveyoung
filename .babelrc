@@ -1,0 +1,15 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
+  // preset-env : 최신 버전의 JS를 대상 환경에서 지원되는 구식 버전으로 변환해줌 > 호환성 유지
+  // preset-react : React 애플리케이션에서 JSX를 변환하는데 사용, JSX를 일반 JS로 변환하여 실행 가능한 코드로 만들어줌
+
+  "plugins": [
+    "@emotion",
+    "@babel/plugin-transform-runtime",
+    // babel이 변환한 코드에서 공통적인 도우미 함수를 재사용하도록 지원 > 코드 번들 크기를 줄이고 재사용성 향상
+    "@babel/plugin-proposal-optional-chaining",
+    // 옵셔널 체이닝 연산자인 ?.을 변환해줌
+    "@babel/plugin-proposal-nullish-coalescing-operator"
+    // null 병합 연산자인 ??을 변환해줌
+  ]
+}

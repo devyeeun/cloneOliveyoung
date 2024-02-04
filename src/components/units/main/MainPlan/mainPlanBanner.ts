@@ -1,0 +1,46 @@
+export const MAIN_PLAN_BANNER = [
+  [
+    {
+      bannerKey: '1',
+      url: 'https://www.oliveyoung.co.kr/store/planshop/getPlanShopDetail.do?dispCatNo : 500000102870071&trackingCd : Home_Planshop3_PROD',
+      src: '/images/banner3.jpeg',
+      width: '500px',
+      height: '300px',
+      title: 'HOT한 구강용품',
+      subTitle: '신상품만 모아모아',
+      tag: '#구강유산균 #직구템',
+    },
+    {
+      bannerKey: '2',
+      url: 'https://www.oliveyoung.co.kr/store/planshop/getPlanShopDetail.do?dispCatNo:500000102700078&trackingCd:Home_Planshop2_PROD',
+      src: '/images/banner4.jpeg',
+      width: '500px',
+      height: '300px',
+      title: '더운 여름 상쾌하게',
+      subTitle: 'Y존케어 필수템',
+      tag: '#Max55%',
+    },
+  ],
+  [
+    {
+      bannerKey: '3',
+      url: 'https://www.oliveyoung.co.kr/store/planshop/getPlanShopDetail.do?dispCatNo=500000102950014&trackingCd=Home_Planshop3_PROD',
+      src: '/images/banner5.jpeg',
+      width: '500px',
+      height: '300px',
+      title: '필리밀리 깜짝 특가',
+      subTitle: '단 7일간 UP T0 35%',
+      tag: '#스파츌라한정기획출시!',
+    },
+    {
+      bannerKey: '4',
+      url: 'https://www.oliveyoung.co.kr/store/planshop/getPlanShopDetail.do?dispCatNo=500000102750147&trackingCd=Home_Planshop3_PROD',
+      src: '/images/banner6.jpeg',
+      width: '500px',
+      height: '300px',
+      title: '다이어트가 고민이라면?',
+      subTitle: '메타그린 부스터샷',
+      tag: '#하루1병 #부스터샷',
+    },
+  ],
+]

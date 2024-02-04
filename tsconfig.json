@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 타입스크립트파일을 어떤 버전의 JS로 바꿔줄지 정하는 부분
+    "module": "esnext", // 자바스크립트 파일간 import 문법을 구현할 때 어떤 문법을 쓸지 정하는 곳, esnext는 import문법을 사용
+    "noImplicitAny": true, // any타입 금지 여부
+    "strict": true, // TypeScript 컴파일러에 대해 엄격한 타입 체크를 수행하도록 지시하는 것
+    "esModuleInterop": true, // TS에서 CommonJS와 Es
+    "allowJs": true, // js파일들 ts에서 import해서 쓸 수 있는지
+    "removeComments": true, //컴파일시 주석제거
+    "moduleResolution": "node", // TS컴파일러가 모듈 해석을 Node.js의 모듈해석방식에 따라 수행함
+    "outDir": "dist", // 출력파일을 'dist'폴더와 같은 디렉토리에 생성
+    "jsx": "preserve"
+  },
+  "exclude": ["node_modules"]
+}

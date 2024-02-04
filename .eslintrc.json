@@ -1,0 +1,31 @@
+{
+  // 프로젝트에서 사용할 환경 정의
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  // 다른 ESLint 설정을 확장하여 사용
+  "extends": [
+    "plugin:prettier/recommended", // eslint와 prettier가 충돌나는 부분 비활성화 ( eslint-config-prettier )
+    "prettier",
+    "eslint:recommended"
+  ],
+
+  "plugins": [
+    // 기본적인 ESLint 규칙 지원
+    "eslint:recommended",
+
+    // ES2015의 import/export 구문 지원 ( eslint-plugin-import )
+    "import",
+
+    // React함수 컴포넌트 안에서, custom hook에서 hook을 호출하도록 강제
+    "react-hooks" 
+  ],
+  // 전체 파일에 대한 규칙 적용
+  "rules": {
+    "prettier/prettier": ["error"], // prettier 규칙을 어기면 error 발생
+    "no-unused-vars": "off", // 사용되지 않는 변수에 대한 경고 비활성화
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+  }
+}

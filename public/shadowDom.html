@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shadow DOM Example</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Some content...</div>
+
+    <script>
+      const element = document.createElement('div')
+      const shadowRoot = element.attachShadow({ mode: 'open' })
+
+      const h1 = document.createElement('h1')
+      h1.textContent = 'Hello, Shadow DOM!!'
+
+      shadowRoot.appendChild(h1)
+      // 'open' 모드의 Shadow DOM 요소에 접근하여 스타일 변경
+      const heading = shadowRoot.querySelector('h1')
+      heading.style.color = 'skyblue'
+
+      document.body.appendChild(element)
+    </script>
+  </body>
+</html>
